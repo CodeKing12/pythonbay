@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    transition: all 0.4s ease-out;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #00ADB5;
+    --secondary: #1C4E6E;
+    --asuu-tinz: #41A2FF;
+}
+
+header {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/sigmund-Fa9b57hffnM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.estimate-btn {
+    background-color: transparent;
+    padding: 11px 27px;
+    border: 2px solid #fff;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.estimate-btn:hover {
+    background-color: #fff;
+    color: var(--primary);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-txt {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.banner .banner-txt span {
+    color: var(--asuu-tinz);
+}
+
+.banner .banner-sub {
+    margin-top: 15px;
+    margin-bottom: 33px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+
+.banner .enquiry-btn {
+    background-color: transparent;
+    padding: 11px 27px;
+    border: 2px solid var(--asuu-tinz);
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.banner .enquiry-btn:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.about {
+    padding: 50px 40px;
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.about .about-content p {
+    max-width: 532px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 35px;
+    letter-spacing: 1%;
+}
+
+.services {
+    padding: 50px 40px 100px 40px;
+    background-color: #f7f8f7;
+}
+
+.all-services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.all-services .service-card {
+    /* width: max-content; */
+    padding-bottom: 21px;
+    width: 28%;
+    background-color: #fff;
+}
+
+.all-services .service-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.all-services .service-card h2 {
+    margin: 17px 0 8px 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.all-services .service-card .card-list {
+    padding: 0 40px 0 40px;
+}
+
+.all-services .service-card .card-list li {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.portfolio {
+    padding: 62px 40px 90px 40px;
+}
+
+.all-projects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.portfolio .all-projects .portfolio-card {
+    width: 30%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.portfolio .all-projects .portfolio-card img {
+    width: 100%;
+    margin-bottom: 14px;
+    height: 185px;
+    object-fit: cover;
+}
+
+.portfolio .all-projects .portfolio-card a {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+}
+
+.portfolio .all-projects .portfolio-card:hover img {
+    transform: scale(1.13) rotateY(180deg);
+}
+
+.portfolio .all-projects .portfolio-card:hover a {
+    text-decoration-color: var(--secondary);
+}
+
+.team {
+    padding: 55px 40px 95px 40px;
+    background-color: #f8f8f8;
+}
+
+.team .all-members {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.team .all-members .team-member {
+    display: flex;
+    gap: 20px;
+    width: 30%;
+    height: 90px;
+    cursor: pointer;
+}
+
+.team .all-members .team-member img {
+    width: 90px;
+    height: 100%;
+}
+
+.team .all-members .team-member .member-info h4 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 31px;
+    color: var(--secondary);
+    margin-bottom: 9px;
+}
+
+.team .all-members .team-member .member-info p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.team .all-members .team-member:hover {
+    transform: translateY(-12px);
+}
+
+.contact {
+    padding: 100px 40px;
+}
+
+.contact .contact-box {
+    max-width: 980px;
+    background-color: #f8f8f8;
+    border: 3px solid var(--asuu-tinz);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 44px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .contact-box .contact-info {
+    width: 47%;
+}
+
+.contact .contact-box .contact-info h2 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 31px;
+}
+
+.contact .contact-box .contact-info .direct-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 28px 0 58px 0;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.contact .contact-box .contact-form {
+    width: 40%;
+}
+
+.contact .contact-box .contact-form p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 31px;
+    letter-spacing: 1%;
+}
+
+.contact .contact-box .contact-form .form .input-group {
+    width: 100%;
+}
+
+.contact .contact-box .contact-form .form {
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact .contact-box .contact-form .form .input-group label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 1%;
+}
+
+.contact .contact-box .contact-form .form .input-group input {
+    height: 35px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 11px;   
+    background-color: #fff;
+    width: 100%;
+    border: 2px solid var(--asuu-tinz);
+    margin-top: 7px;
+}
+
+.contact .contact-box .contact-form .form .input-group textarea {
+    height: 120px;
+    display: flex;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 11px;   
+    background-color: #fff;
+    width: 100%;
+    border: 2px solid var(--asuu-tinz);
+    margin-top: 7px;
+}
+
+footer {
+    display: flex;
+    height: 330px;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/footer-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 82px 77px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+footer .logo {
+    margin-bottom: 31px;
+}
+
+footer .foot-contact .foot-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer .foot-contact .foot-contact-info p span {
+    color: #f5deb3;
+}
+
+footer .foot-contact .foot-contact-info .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+footer .foot-contact .foot-contact-info .social-icons span {
+    margin-left: 12px;
+    fill: wheat;
+    display: flex;
+    gap: 8px;
+}
+
+footer .foot-sections .heading {
+    color: wheat;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 17px;
+    text-align: left;
+}
+
+footer .foot-sections ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-weight: 600;
+}
+
+footer .foot-sections ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .foot-sections ul li a:hover {
+    color: wheat
+}
+
+footer .foot-about .heading {
+    color: wheat;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 17px;
+    text-align: left;
+}
+
+footer .foot-about p:last-child {
+    line-height: 24px;
+}
+
+footer .foot-about {
+    max-width: 17%;
+}
