@@ -143,13 +143,21 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: stretch;
+    row-gap: 50px;
 }
 
 .all-services .service-card {
     /* width: max-content; */
     padding-bottom: 21px;
     width: 28%;
-    background-color: #fff;
+    background-color: transparent;
+}
+
+.all-services .service-card > div {
+    max-width: 28vw;
+    margin: 0 auto;
+    background-color: white;
+    height: 100%;
 }
 
 .all-services .service-card img {
@@ -166,7 +174,7 @@ header {
 }
 
 .all-services .service-card .card-list {
-    padding: 0 40px 0 40px;
+    padding: 0 40px 18px 40px;
 }
 
 .all-services .service-card .card-list li {
@@ -353,7 +361,7 @@ header {
 
 footer {
     display: flex;
-    height: 330px;
+    height: fit-content;
     width: 100%;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/footer-bg.jpg");
     background-position: center;
@@ -431,4 +439,143 @@ footer .foot-about p:last-child {
 
 footer .foot-about {
     max-width: 17%;
+}
+
+.action-nav svg {
+    display: none;
+}
+
+@media (max-width: 930px) {
+    .nav-links {
+        display: none;
+    }
+
+    .action-nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+
+    footer > div {
+        width: 45%;
+    }
+
+    footer .foot-about {
+        max-width: 100%;
+    }
+
+    .action-nav svg {
+        display: inline;
+        width: 45px;
+        height: 45px;
+        fill: #fff;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1070px) {
+    .about .about-content {
+        flex-wrap: wrap;
+    }
+
+    .about .about-content img, .about .about-content p {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .about .about-content p {
+        max-width: 800px;
+    }
+
+    footer {
+        padding: 82px 50px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .all-services {
+        flex-wrap: wrap;
+    }
+
+    .all-services .service-card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 920px) {
+    .portfolio .all-projects .portfolio-card {
+        width: 45%;
+    }
+
+    .services {
+        padding:50px 20px 100px 20px;
+    }
+
+    .all-services .service-card {
+        width: 75%;
+    }
+
+    .all-services .service-card > div {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 540px) {
+    .all-services .service-card {
+        width: 100%;
+    }
+
+    .team .all-members .team-member {
+        width: 100% !important;
+    }
+
+    .contact .contact-box {
+        padding: 44px 35px;
+    }
+
+    footer > div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .portfolio .all-projects .portfolio-card {
+        width: 90%;
+    }
+
+    .team .all-members .team-member {
+        width: 80% !important;
+    }
+
+    .contact {
+        padding: 100px 20px;
+    }
+
+    .contact .contact-box {
+        padding: 44px 45px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .team .all-members .team-member {
+        width: 45%;
+    }
+}
+
+@media (max-width: 835px) {
+    .contact .contact-box {
+        flex-wrap: wrap;
+    }
+
+    .contact .contact-box .contact-info {
+        width: 100%;
+    }
+
+    .contact .contact-box .contact-form {
+        width: 100%;
+    }
 }
